@@ -6,5 +6,4 @@ class Booking < ApplicationRecord
 # Validations
   # Ajoutez vos validations ici, par exemple si vous avez un champ date :
   validates :date, presence: true
-
 end
