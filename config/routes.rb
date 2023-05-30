@@ -11,7 +11,6 @@ Rails.application.routes.draw do
 
   # Users :
   resources :users, only: [:show, :edit, :update]
-
   # actionsItems
   resources :items do
     resources :bookings, only: [:create]
