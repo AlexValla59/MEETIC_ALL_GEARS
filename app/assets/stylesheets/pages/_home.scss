@@ -5,37 +5,38 @@
 .content{
   background-color: black;
   height:600px;
-  display : flex;
+
 
 }
 
 .content h1{
-  color : white;
-  margin-top: 110px;
+  color: white;
+  margin-bottom: 0;
   font-size: 80px;
-  margin-left: 140px;
+  margin-left: 50px;
   font-family: 'Russo One', sans-serif;
+  padding-top: 75px;
 }
 
 .content p{
   color: white;
-  margin-top: 218px;
+  margin-top: 0;
   font-size: 35px;
-  margin-left: -660px;
+  margin-left: 50px;
 }
 .content a{
   background-color: #c9412b;
-  height: 43px;
-  width: 157px;
+  display: block;
+  height: 40px;
+  width: 150px;
   color: white;
-  margin-top: 290px;
+  margin-top: 20px;
   font-size: 26px;
-  margin-left: -610px;
-  border-radius: 12px;
+  margin-left: 47px;
+  border-radius: 11px;
   text-decoration: none;
   text-align: center;
-  box-shadow: 0 0 16px rgba (0,0,0,0.1);
-  transition:1s ease
+  transition: 1s ease;
 }
 
 .content a:hover{
