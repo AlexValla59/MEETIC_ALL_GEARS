@@ -1,1 +1,45 @@
 // Specific CSS for your home-page
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.content{
+  background-color: black;
+  height:600px;
+  display : flex;
+
+}
+
+.content h1{
+  color : white;
+  margin-top: 110px;
+  font-size: 80px;
+  margin-left: 140px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.content p{
+  color: white;
+  margin-top: 218px;
+  font-size: 35px;
+  margin-left: -660px;
+}
+.content a{
+  background-color: #c9412b;
+  height: 43px;
+  width: 157px;
+  color: white;
+  margin-top: 290px;
+  font-size: 26px;
+  margin-left: -610px;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 16px rgba (0,0,0,0.1);
+  transition:1s ease
+}
+
+.content a:hover{
+  background-color: rgb(160, 57, 46);
+
+
+}
