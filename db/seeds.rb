@@ -21,7 +21,6 @@ user5 = User.create(email: "phil@gmail.com", password: "123456", name: "phil")
 
 p "-------------- #{User.count} users created--------------"
 
-
 item1 = Item.create(name: 'Sabre Laser rouge', description: "Voici mon sabre laser rouge, remis en main propre par le Sénateur Palpatine. Il a été un allié important dans ma vie du côté obscure de la Force. Attention, il est coupant !", price: '215 €', category: 'armes', univers:'Star Wars', poster_url: 'https://cdn2.unrealengine.com/fortnite-darth-vaders-lightsaber-1900x600-fa4602e83bd8.jpg')
 item2 = Item.create(name: 'Baguette de Sureau', description: "Je vous propose la baguette la plus puissante du monde pour vous aider dans vos tâches ménagères mais aussi pour régler vos différends avec certaines personnes. Prennez garde, le sortilège, Avada Kedavra, fonctionne mal !", price: '317€', category: 'Outils', univers:'Harry Potter', poster_url:"https://static.wikia.nocookie.net/noir-ramage/images/3/3d/Baguette_de_Sureau.jpg/revision/latest?cb=20180729143032&path-prefix=fr")
 
