@@ -1,0 +1,19 @@
+.main-image {
+  background-image: url(https://cdn.pixabay.com/photo/2014/02/05/19/58/blue-259458_1280.jpg);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-image h1{
+  color: white;
+  margin-bottom: 0;
+  font-size: 80px;
+  margin-left: 50px;
+  font-family: 'Russo One', sans-serif;
+}
