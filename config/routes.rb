@@ -1,8 +1,24 @@
-Rails.application.routes.draw do
-  devise_for :users
-  root to: "pages#home"
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+Rails.application.routes.draw do
+  # Pour les Login/logout des Users
+  devise_for :users
+  # devise_scope :user do
+  #   get'CHECK later pour Login/logout'
+  # end
+
+  # Page d'accueil ?
+  root to: "pages#home"
+
+  # Users :
+  resources :users, only: [:show, :edit, :update]
+
+  # actionsItems
+  resources :items do
+    resources :bookings, only: [:create]
+  end
+
+  # Bookings
+  resources :bookings, only: [:index, :show, :update, :create] do
+    patch 'reviews', to: 'reviews#update'
+  end
 end
