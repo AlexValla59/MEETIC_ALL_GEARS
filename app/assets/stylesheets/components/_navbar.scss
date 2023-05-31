@@ -1,6 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: transparent;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -10,3 +10,18 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+// .nav-link {
+//   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+//   font-size: var(--bs-nav-link-font-size);
+//   font-weight: var(--bs-nav-link-font-weight);
+//   color: var(--bs-nav-link-color);
+//   text-decoration: none;
+//   background: none;
+//   border: 0;
+//   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+// }
+
+// .navbar-expand-sm .navbar-nav .nav-link {
+//   font-size: 30px;
+// }
