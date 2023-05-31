@@ -2,7 +2,17 @@
 // Run that command whenever you add a new controller or create them with
 // ./bin/rails generate stimulus controllerName
 
-import { application } from "./application"
+
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+
+
+import TypedJsController from "./typed_js_controller"
+application.register("typed-js", TypedJsController)
+
+// app/javascript/controllers/index.js
+import { application } from "./application"
+
+import NavbarController from "./navbar_controller.js"
+application.register("navbar", NavbarController)
