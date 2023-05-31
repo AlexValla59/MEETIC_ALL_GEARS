@@ -7,8 +7,11 @@
           <%= f.input :name, placeholder: 'your stuff' %>
           <%= f.input :description %>
           <%= f.input :price %>
+
+
           <%= f.select :univers, Item::UNIVERS %>
           <%= f.input :category %>
+
           <%= f.submit class: 'btn btn-primary' %>
         <% end %>
       </div>
