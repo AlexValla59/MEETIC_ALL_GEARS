@@ -1,10 +1,31 @@
-<div class="item-details">
-  <h2><%= @item.name %> bleu</h2>
-  <% if @item.user_id == current_user %>
-    <%# Intégrer structure avec titre & description de l'objet  %>
-    <%= link_to 'Éditer', edit_item_path(@item), class: 'btn btn-primary' %>
-    <%= link_to 'Supprimer', @item, class: 'btn btn-danger' %>
-    else
-  <% end %>
-  <%# Intégrer structure avec titre & description de l'objet  %>
+
+
+<div class="item-show">
+  <div class="item-name">
+    <h1><%= @item.name %></h1>
+  </div>
+
+  <div class="item-description">
+    <p>Description:<%= @item.description %></p>
+  </div>
+
+  <div class="item-price">
+    <h2>Prix: <%= @item.price %> € </h2>
+  </div>
+
+  <div class="item-category">
+    <p>Categorie: <%= @item.category %></p>
+  </div>
+
+  <div class="item-univers">
+    <p>Univers: <%= @item.univers %></p>
+  </div>
+
+  <div class="item-poster">
+    <img src="<%= @item.poster_url %>" alt="#">
+  </div>
+
+  <div class="btn-primary ">
+  <%= link_to "Back to items", items_path, class: "btn-primary"%>
+  </div>
 </div>

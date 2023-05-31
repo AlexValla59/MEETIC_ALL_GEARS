@@ -1,9 +1,7 @@
 class ItemsController < ApplicationController
-
   def index
     @items = Item.all
   end
-
 
   def new
     @item = Item.new
@@ -12,14 +10,20 @@ class ItemsController < ApplicationController
   def create
     @item = Item.new(item_params)
     if @item.save
-      redirect_to items_path(@item)
+      redirect_to items_path(@item),
+
     else
       render :new, status: :unprocessable_entity
+
+      @item = Item.new(item_params)
     end
   end
 
   def show
     @item = Item.find(params[:id])
+    if @item.user_id == current_user
+      @item.user_id = true
+    end
   end
 
   def destroy
