@@ -5,19 +5,19 @@
 </div>
 
 <div class="container">
-   <%# <% @items.each do |item| %>
+   <% @items.each do |item| %>
       <div class="col-lg-6">
-        <%# <%= link_to item_path(@item), class:"text-decoration-none" do %>
+        <%= link_to items_path(@item), class:"text-decoration-none" do %>
         <div class = "nb1">
           <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) url: https://fr.web.img4.acsta.net/r_654_368/newsv7/20/09/24/15/36/1415597.jpg)">
-            <%# <%= item.name %>
+            <%= item.name %>
           </div>
           </div>
            <div class = "nb2">
           <div class="card-category" data-aos="zoom-in" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3) url: https://fr.web.img4.acsta.net/r_654_368/newsv7/20/09/24/15/36/1415597.jpg)">
-            <%# <%= item.name %>
+            <%= item.name %>
           </div>
-            <%# <%end %>
+            <% end %>
       </div>
-   <%# <%end %>
+    <% end %>
 </div>
