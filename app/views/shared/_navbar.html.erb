@@ -2,7 +2,7 @@
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <div class="container-fluid">
       <%= link_to "#", class: "navbar-brand" do %>
-        <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+        <%= image_tag "https://farm3.static.flickr.com/2131/2264940881_0b3aea4854.jpg" %>
       <% end %>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,28 +11,30 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto">
-          <%# if user_signed_in? %>
+          <% if user_signed_in? %>
           <%# ajouter le logo en dessous pour linker à la page home %>
             <%# <li class="nav-item active">
               <%= link_to "Home", "#", class: "nav-link" %>
             <%# </li> %>
             <%# linker la bonne page (ajout d'un item) sur le bouton ajouter une arme %>
             <li class="nav-item">
-              <%= link_to "+", "#", class: "nav-link" %>
+              <%= link_to "+", class: "nav-link" %>
             </li>
             <li class="nav-item dropdown">
-              <%= image_tag "https://static.papergeek.fr/2020/10/Baby-Yoda.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+              <%= image_tag current_user.photo_url, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <%= link_to "Mes réservations", "#", class: "dropdown-item" %>
                 <%= link_to "Mes armes", "#", class: "dropdown-item" %>
-                <%= link_to "Déconnexion", "#", class: "dropdown-item", data: {turbo_method: :delete} %>
+                <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "dropdown-item", data: {turbo_method: :delete} %>
               </div>
             </li>
-          <%# else %>
+          <% else %>
+                <%= image_tag "https://static.vecteezy.com/system/resources/previews/000/512/576/original/vector-profile-glyph-black-icon.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+
             <!--li class="nav-item"-->
               <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
             <!--/li-->
-          <%# end %>
+          <% end %>
         </ul>
       </div>
     </div>

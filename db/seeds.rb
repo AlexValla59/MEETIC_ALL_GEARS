@@ -13,11 +13,11 @@ p "--------------all users deleted--------------"
 Item.destroy_all
 p "--------------all items deleted--------------"
 
-user1 = User.create(email: "foucauld@qmail.com", password: "123456", name: "foucauld")
-user2 = User.create(email: "alexandre@gmail.com", password: "123456", name: "Alexandre")
-user3 = User.create(email: "fx@gmail.com", password: "123456", name: "FX")
-user4 = User.create(email: "jane@gmail.com", password: "123456", name: "Jane")
-user5 = User.create(email: "phil@gmail.com", password: "123456", name: "phil")
+user1 = User.create(email: "foucauld@qmail.com", password: "123456", name: "foucauld", photo_url: "https://pngimg.com/uploads/batman/batman_PNG80.png")
+user2 = User.create(email: "alexandre@gmail.com", password: "123456", name: "Alexandre", photo_url: "https://fr.web.img3.acsta.net/newsv7/20/11/12/10/29/0506815.jpg")
+user3 = User.create(email: "fx@gmail.com", password: "123456", name: "FX", photo_url: "https://i.pinimg.com/originals/64/db/e4/64dbe449efed26997e5b05392a3752b5.jpg")
+user4 = User.create(email: "jane@gmail.com", password: "123456", name: "Jane", photo_url: "https://www.films-disney.fr/wp-content/uploads/2018/05/cendrillon.jpg")
+user5 = User.create(email: "phil@gmail.com", password: "123456", name: "phil", photo_url: "https://www.gannett-cdn.com/presto/2019/04/25/USAT/9778482f-f809-4a08-82a7-67ddfa3e2f98-XXX_AVENGERS_AGE_ULTRON_MOV_jy_5965_.JPG?crop=1068,600,x1088,y30&width=3200&height=1680&fit=bounds")
 
 p "-------------- #{User.count} users created--------------"
 
