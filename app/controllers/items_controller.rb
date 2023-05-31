@@ -14,7 +14,6 @@ class ItemsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
 
-      @item = Item.new(item_params)
     end
   end
 
