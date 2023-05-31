@@ -2,6 +2,7 @@
   <div class= "title-index">
     <h1>Items available</h1>
   </div>
+
 </div><div class="container">   <% @items.each do |item| %>
       <div class= "cards mb-3">
         <%= link_to item_path(item), class:"text-decoration-none" do %>
@@ -11,4 +12,5 @@
    <%end %>
   </div>
    <%end %>
+
 </div>
