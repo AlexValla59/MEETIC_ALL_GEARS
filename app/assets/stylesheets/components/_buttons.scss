@@ -1,11 +1,16 @@
-.btn-flat {
-  color: white;
-  margin-left: 50px;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #670BFF;
-  transition: background 0.3s ease;
+.btn-login {
+  text-align: center;
+  background-color: #215e8b;
+  color: #fff;
+  padding: 10px 20px;
   text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+  &:hover {
+    background-color: #0d3857;
+}
 }
 
 .btn-flat:hover {
@@ -26,4 +31,19 @@
   &:hover {
     background-color: #007a63;
   }
+}
+
+.button-home{
+  text-align: center;
+  background-color: #215e8b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #0d3857;
+
+}
 }

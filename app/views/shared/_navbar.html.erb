@@ -1,6 +1,7 @@
 <div class="fixed-top">
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <div class="container-fluid">
+
       <%= link_to "#", class: "navbar-brand" do %>
         <%= image_tag "https://farm3.static.flickr.com/2131/2264940881_0b3aea4854.jpg" %>
       <% end %>
@@ -19,6 +20,7 @@
             <%# linker la bonne page (ajout d'un item) sur le bouton ajouter une arme %>
             <li class="nav-item">
               <%= link_to "Add item", new_item_path, class: "nav-link" %>
+
             </li>
             <li class="nav-item dropdown">
               <%= image_tag current_user.photo_url, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
