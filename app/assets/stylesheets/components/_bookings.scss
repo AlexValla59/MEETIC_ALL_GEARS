@@ -1,0 +1,24 @@
+.font-b{
+  background-image: url(https://cdn.pixabay.com/photo/2014/02/05/19/58/blue-259458_1280.jpg);
+  height: 170vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fort-title{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+h1{
+  font-family: 'Russo One', sans-serif;
+  font-size: 60px;
+}
+
+.box-left{
+  position: relative;
+
+}

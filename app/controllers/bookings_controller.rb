@@ -1,16 +1,16 @@
 class BookingsController < ApplicationController
   def index
-    @booking = Booking.new
-    @bookings = Booking.all
+    @bookings = current_user.bookings
   end
 
   def create
     @item = Item.find(params[:item_id])
-    @booking = Booking.new(booking_params)
+    dates = booking_params[:start_at].split(" to ")
+    @booking = Booking.new(start_at: dates.first, end_at: dates.last, status: "En attente")
     @booking.item = @item
     @booking.user = current_user
     if @booking.save
-      redirect_to item_path(@item)
+      redirect_to bookings_path()
     else
       render :new
     end
@@ -32,6 +32,6 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
-    params.require(:booking).permit(:start_at, :end_at, :date, :item_id, :user_id)
+    params.require(:booking).permit(:start_at, :item_id, :user_id)
   end
 end
