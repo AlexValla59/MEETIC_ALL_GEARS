@@ -18,7 +18,9 @@ class ItemsController < ApplicationController
   end
 
   def show
+    @booking = Booking.new
     @item = Item.find(params[:id])
+
     if @item.user_id == current_user
       @item.user_id = true
     end
