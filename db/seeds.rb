@@ -8,9 +8,11 @@
 puts "#####################"
 puts ' Cleaning database...'
 puts "#####################"
+Booking.destroy_all
+Item.destroy_all
 User.destroy_all
 p "--------------all users deleted--------------"
-Item.destroy_all
+
 p "--------------all items deleted--------------"
 
 user1 = User.create(email: "foucauld@qmail.com", password: "123456", name: "foucauld", photo_url: "https://pngimg.com/uploads/batman/batman_PNG80.png")
