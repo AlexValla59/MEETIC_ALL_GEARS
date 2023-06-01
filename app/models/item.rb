@@ -1,7 +1,7 @@
 class Item < ApplicationRecord
   # Associations
   has_many :bookings
-  # belongs_to :user  #ici
+  belongs_to :user
 
   # Validations
 
