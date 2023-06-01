@@ -6,14 +6,19 @@
 
 
 .card-category {
-  width: 260px;
-  height: 300px;
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  margin-top: 28px;
-  margin-bottom: 28px;
+   display: block;
 
+  width: 260px;
+    height: 322px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin: 65px auto;
+
+    margin-bottom: -20px;
 }
+
+
 
 .card-category img {
 
@@ -28,5 +33,32 @@
   font-size: 20px;
   text-align: center;
   font-weight: bold;
+}
 
+.card-category-info p{
+  text-align: center;
+}
+
+.card-category-info .card-category-user {
+  position: relative;
+  right: -96px;
+  top: 8px;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+}
+
+
+
+.button-info{
+  text-align: center;
+  background-color: #215e8b;
+  color: #fff;
+  padding: 7px 20px;
+  text-decoration: none;
+  border-radius: 0;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: #0d3857;
+}
 }
