@@ -1,16 +1,19 @@
 class BookingsController < ApplicationController
+  def index
+    @booking = Booking.new
+    @bookings = Booking.all
+  end
 
   def create
+    @item = Item.find(params[:item_id])
     @booking = Booking.new(booking_params)
+    @booking.item = @item
+    @booking.user = current_user
     if @booking.save
-      redirect_to @booking
+      redirect_to item_path(@item)
     else
       render :new
     end
-  end
-
-  def index
-    @bookings = Booking.all
   end
 
   def show
@@ -26,13 +29,9 @@ class BookingsController < ApplicationController
     end
   end
 
-    private
+  private
 
   def booking_params
-    params.require(:booking).permit(:date, :item_id, :user_id)
+    params.require(:booking).permit(:start_at, :end_at, :date, :item_id, :user_id)
   end
 end
-
-    # def owner_index
-    #   @bookings = current_user.bookings
-    # end
