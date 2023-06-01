@@ -4,6 +4,13 @@
       <div class="item-poster">
         <img src="<%= @item.poster_url %>" alt="#">
       </div>
+
+                <div class= "edit">
+      <% if @item.user == current_user %>
+    <%= link_to "Modifier", edit_item_path(@item), class: "btn btn-primary" %>
+    <%= link_to "Supprimer", item_path(@item), data: {turbo_method: :delete, turbo_confirm: "Etes vous sur ?"}, class: "btn btn-primary" %>
+  <% end %>
+      </div>
     </div>
 
       <div class="info-section">
@@ -19,8 +26,13 @@
         <div class="item-price">
           <h2>Prix à la journée : <%= @item.price %> € </h2>
         </div>
+
       </div>
+
+
     </div>
+
+
 
   <div class="block2">
     <div class="map-section">
