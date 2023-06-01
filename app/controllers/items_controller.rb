@@ -22,6 +22,10 @@ class ItemsController < ApplicationController
     if @item.user_id == current_user
       @item.user_id = true
     end
+    if @item.geocoded?
+      @markers = [{ lat: @item.latitude, lng: @item.longitude }]
+    end
+
   end
 
   def destroy
