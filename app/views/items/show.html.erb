@@ -1,8 +1,10 @@
 <div class="item-show">
   <div class="block1">
+    <div class="item-poster-wrapper">
       <div class="item-poster">
         <img src="<%= @item.poster_url %>" alt="#">
       </div>
+    </div>
 
       <div class="info-section">
         <div class="item-name">
@@ -10,11 +12,12 @@
         </div>
 
         <div class="item-description">
-          <p>Description:<%= @item.description %></p>
+          <p>Description:</p>
+          <p><%= @item.description %></p>
         </div>
 
         <div class="item-price">
-          <h2>Prix: <%= @item.price %> € </h2>
+          <h2>Prix à la journée : <%= @item.price %> € </h2>
         </div>
       </div>
     </div>
@@ -31,9 +34,14 @@
     <%= simple_form_for [@item, @booking] do |f| %>
       <div style="margin-right: -8px;">
         <div style="margin-left: 200px">
+              <div class="booking-date">
         <%= f.input :start_at, as: :string, placeholder: "Dates", label: false, input_html: {data: { controller: "flatpickr" }, style: "width: 30vh; height: 4em;"} %>
         </div>
+              </div>
+      <div class="booking-reserve">
       <%= f.submit "Réserver !"%>
+      </div>
+
       </div>
     <% end %>
     </div>
