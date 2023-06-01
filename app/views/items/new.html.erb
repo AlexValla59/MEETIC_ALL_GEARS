@@ -1,18 +1,17 @@
-<div class="bg-dark container py-5 w-auto" >
-  <div class="row">
-    <div class="col-12 col-md-6 offset-lg-3">
-      <div class="bg-white rounded p-3 shadow">
-        <h3>Add an item</h3>
+<div class="fond3" >
+  <div class="box4">
+    <div class="cards_form_add">
+        <h2>Add an item</h2>
         <%= simple_form_for @item do |f| %>
-          <%= f.input :name, placeholder: 'your stuff' %>
+          <%= f.input :name, placeholder: 'your stuff' %> <%= f.input :price %>
           <%= f.input :description %>
-          <%= f.input :price %>
+
 
 
           <%= f.select :univers, Item::UNIVERS %>
           <%= f.input :category %>
 
-          <%= f.submit class: 'btn btn-primary' %>
+          <%= f.submit class: 'button_add_item' %>
         <% end %>
       </div>
     </div>
