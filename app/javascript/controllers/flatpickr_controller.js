@@ -9,7 +9,7 @@ export default class extends Controller {
     console.log("connected")
     new flatpickr(this.element, {
       minDate: "today",
-      // inline: false,
+      inline: true,
       mode: "range",
       dateFormat: "d-m-Y",
     });
