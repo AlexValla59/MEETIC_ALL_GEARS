@@ -1,18 +1,22 @@
-.box2{
+.box4{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: white;
-  height: 55%;
-  width: 30%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
   border-radius: 5%;
-  margin:150px auto
+  margin: 100px auto;
+  max-width: 100%;
+  margin: 100px auto;
+  width: 40%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
-.fond{
-  background-image: url(https://cdn.pixabay.com/photo/2014/02/05/19/58/blue-259458_1280.jpg);
+
+.fond3{
+    background-image: url(https://cdn.pixabay.com/photo/2014/02/05/19/58/blue-259458_1280.jpg);
   position: absolute;
   top: 0;
   left: 0;
@@ -23,14 +27,14 @@
 }
 
 
-  .cards_form h2 {
+  .cards_form_add h2 {
     text-align: center;
     font-size: 30px;
     color:#0d3857
   }
 
 
-  .button_sign_up{
+  .cards_form_add .button_add_item{
     text-align: center;
     background-color: #215e8b;
     color: #fff;
@@ -39,14 +43,7 @@
     border-radius: 5px;
     margin-top: 0px;
     transition: background-color 0.3s;
-    margin-left: 0px;
     &:hover {
       background-color: #0d3857;
   }
-}
-
-  .login{
-    text-decoration: none;
-  color: black;
-
   }
