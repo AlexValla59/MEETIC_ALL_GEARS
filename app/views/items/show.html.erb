@@ -28,7 +28,14 @@
     </div>
 
     <div class="booking-form">
-
+    <%= simple_form_for [@item, @booking] do |f| %>
+      <div style="margin-right: -8px;">
+        <div style="margin-left: 200px">
+        <%= f.input :start_at, as: :string, placeholder: "Dates", label: false, input_html: {data: { controller: "flatpickr" }, style: "width: 30vh; height: 4em;"} %>
+        </div>
+      <%= f.submit "Réserver !"%>
+      </div>
+    <% end %>
     </div>
   </div>
 </div>

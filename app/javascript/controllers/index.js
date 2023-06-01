@@ -3,22 +3,17 @@
 // ./bin/rails generate stimulus controllerName
 
 import { application } from "./application"
-<<<<<<< HEAD
-=======
+
 
 import FlatpickrController from "./flatpickr_controller"
 application.register("flatpickr", FlatpickrController)
->>>>>>> 354f3f1470527fb916c6051347155cff33f55d8f
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-<<<<<<< HEAD
 import MapController from "./map_controller"
 application.register("map", MapController)
 
-=======
->>>>>>> 354f3f1470527fb916c6051347155cff33f55d8f
 import NavbarController from "./navbar_controller"
 application.register("navbar", NavbarController)
 
