@@ -1,3 +1,43 @@
 .box3{
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 55%;
+  width: 30%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+  border-radius: 5%;
+  margin:150px auto
 }
+
+
+.fond2{
+  background-image: url(https://cdn.pixabay.com/photo/2014/02/05/19/58/blue-259458_1280.jpg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  .cards_form2 h2 {
+    text-align: center;
+    font-size: 30px;
+    color:#0d3857
+  }
+
+
+  .button_log{
+    text-align: center;
+    background-color: #215e8b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0px;
+    transition: background-color 0.3s;
+    margin-left: 0px;
+  }

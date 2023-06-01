@@ -1,13 +1,18 @@
 .main-image {
   background-image: url(https://cdn.pixabay.com/photo/2014/02/05/19/58/blue-259458_1280.jpg);
-  height: 150px;
-  width: 100%;
-  background-position: center;
-  background-size:cover;
+  height: 190vh;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title-index h1{
+
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 100px
+
 }
 
 .main-image h1{
