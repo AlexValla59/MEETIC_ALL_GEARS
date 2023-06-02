@@ -2,16 +2,15 @@
   <div class="box4">
     <div class="cards_form_add">
         <h2>Add an item</h2>
-        <%= simple_form_for @item do |f| %>
-          <%= f.input :name, placeholder: 'your stuff' %> <%= f.input :price %>
-          <%= f.input :description %>
 
+          <%= simple_form_for @item, html: { multipart: true } do |f| %>
+        <%= f.input :name, placeholder: 'Name', required: true %>
+        <%= f.input :price, placeholder: 'Price', required: true %>
+        <%= f.input :description, placeholder: 'Description', required: true %>
+         <%= f.select :univers, Item::UNIVERS %>
+        <%= f.input :poster_url, as: :url, label: 'Upload a photo', required: true %>
+        <%= f.submit 'Create Item', class: 'button_add_item' %>
 
-
-          <%= f.select :univers, Item::UNIVERS %>
-          <%= f.input :category %>
-
-          <%= f.submit class: 'button_add_item' %>
         <% end %>
       </div>
     </div>
