@@ -27,29 +27,35 @@
 .box{
   display: flex;
   justify-content: space-between;
-  margin-top:150px;
+  margin-top:185px;
   margin-left: 120px;
 
 }
 .box h1{
   color: white;
-  font-size: 80px;
+  font-size: 100px;
   font-family: 'Russo One', sans-serif;
 }
 
 .box p{
   color: white;
-  font-size: 35px;
+  font-size: 30px;
 
 }
 
 .taille-p{
-  width: 660px;
-  margin-top: 40px;
-  margin-bottom: 150px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-right: 500px;
 }
 
+.buttons{
 
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
 
 
 
