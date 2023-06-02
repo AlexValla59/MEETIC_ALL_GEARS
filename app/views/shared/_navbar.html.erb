@@ -2,7 +2,7 @@
   <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
     <div class="container-fluid">
 
-      <%= link_to "#", class: "navbar-brand" do %>
+      <%= link_to items_path, class: "navbar-brand" do %>
         <%= image_tag "https://farm3.static.flickr.com/2131/2264940881_0b3aea4854.jpg" %>
       <% end %>
 
@@ -25,7 +25,7 @@
             <li class="nav-item dropdown">
               <%= image_tag current_user.photo_url, class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
               <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <%= link_to "Mes réservations", "#", class: "dropdown-item" %>
+                <%= link_to "Mes réservations", bookings_path, class: "dropdown-item" %>
                 <%= link_to "Mes objets", "#", class: "dropdown-item" %>
                 <%= link_to "Ajouter un objet", new_item_path, class: "dropdown-item" %>
                 <%= link_to "Déconnexion", destroy_user_session_path, method: :delete, class: "dropdown-item", data: {turbo_method: :delete} %>
