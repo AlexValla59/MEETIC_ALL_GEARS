@@ -8,7 +8,7 @@
   <div class="cards">
     <% @items.each do |item| %>
       <div class="card-category">
-        <%= image_tag item.poster_url, alt: "" %>
+        <%= image_tag item.poster_url, class:"card-image", alt: "" %>
         <div class="card-category-info">
           <h2><%= item.name %></h2>
           <p><%=item.price %>€</p>
@@ -20,7 +20,7 @@
           <%# <p>Aucune photo d'utilisateur disponible</p> %>
           <%# <% end %>
 
-          <img src="https://attakus.art/wp-content/uploads/2022/10/dark-vador-darth-vader-article-attakus-art.jpg" alt="#" class= "card-category-user">
+          <img src="<%=Item.last.user.photo_url %>" class="avatar">
 
         </div>
       </div>
