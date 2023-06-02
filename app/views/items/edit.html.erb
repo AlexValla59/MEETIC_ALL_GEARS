@@ -1,1 +1,18 @@
-<h1>edit</h1>
+<div class="fond3" >
+  <div class="box4">
+    <div class="cards_form_add">
+        <h2>Edit an item </h2>
+
+          <%= simple_form_for @item, html: { multipart: true } do |f| %>
+        <%= f.input :name, placeholder: 'Name', required: true %>
+        <%= f.input :price, placeholder: 'Price', required: true %>
+        <%= f.input :description, placeholder: 'Description', required: true %>
+         <%= f.select :univers, Item::UNIVERS %>
+        <%= f.input :poster_url, as: :url, label: 'Upload a photo', required: true %>
+        <%= f.submit 'Modify Item', class: 'button_add_item' %>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

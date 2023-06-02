@@ -37,7 +37,7 @@ class ItemsController < ApplicationController
   def destroy
     @item = Item.find(params[:id])
     @item.destroy
-    redirect_to items_path
+    redirect_to items_path, status: :see_other
   end
 
   def edit
@@ -47,7 +47,7 @@ class ItemsController < ApplicationController
   def update
     @item = Item.find(params[:id])
     @item.update(item_params)
-    redirect_to show_path
+    redirect_to item_path(@item)
   end
 
   def my_items
