@@ -1,5 +1,39 @@
-<h1>mes objets</h1>
 
-<% @items.each do |item| %>
- <%= item.name %>
-<% end %>
+<div class="font-b">
+  <div class="fort-title">
+    <h1>Vos objets mythiques</h1>
+  </div>
+
+
+
+
+
+<div class="container">
+  <div class="cards">
+    <% @items.each do |item| %>
+      <div class="card-category">
+        <%= image_tag item.poster_url, class:"card-image", alt: "" %>
+        <div class="card-category-info">
+          <h2><%= item.name %></h2>
+
+
+          <%# <% if item.user.present? %>
+            <%# <%= image_tag item.user.photo_url, class: "card-category-user" %>
+          <%# <% else %>
+          <%# <p>Aucune photo d'utilisateur disponible</p> %>
+          <%# <% end %>
+
+             <img src="<%= item.user.photo_url %>" class="avatar">
+
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>
+
+
+
+
+
+</div>
