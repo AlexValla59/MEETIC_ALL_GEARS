@@ -20,4 +20,6 @@ Rails.application.routes.draw do
   resources :bookings, only: [:index, :show, :update, :create] do
     patch 'reviews', to: 'reviews#update'
   end
+
+  get "my_items", to: "items#my_items"
 end

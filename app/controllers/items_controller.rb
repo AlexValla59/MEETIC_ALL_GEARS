@@ -50,6 +50,11 @@ class ItemsController < ApplicationController
     redirect_to show_path
   end
 
+  def my_items
+    @items = current_user.items
+
+  end
+
   private
 
   def item_params
