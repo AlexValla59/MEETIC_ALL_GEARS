@@ -11,7 +11,8 @@ class ItemsController < ApplicationController
   def create
 
     @item = Item.new(item_params)
-    if @item.save
+    @item.user = current_user
+    if @item.save!
 
       redirect_to items_path
     else
