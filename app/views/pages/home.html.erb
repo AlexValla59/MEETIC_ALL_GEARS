@@ -5,13 +5,14 @@
       <div class="taille-p">
         <p> Trouver les meilleurs objets mythiques de la pop culture, pour vos projets de tous les jours !</p>
       </div>
+      <div class="buttons">
     <%= link_to "Voir les objets mythiques", items_path, class:"button-home" %>
     <% if current_user.nil? %>
       <%= link_to "S'inscrire", new_user_registration_path, class: "btn-login" %>
       <%= link_to "Déjà inscrit?", new_user_session_path, class: "button_already" %>
     <% end %>
     <p><span data-controller="typed-js"></span></p>
-
+</div>
   </div>
 </div>
 </div>
